@@ -74,9 +74,12 @@ public class B { public B(A a) { } }
 ```
 Async Disposal
 ```csharp
-// This will throw: "Circular dependency detected for service type A"
-public class A { public A(B b) { } }
-public class B { public B(A a) { } }
+public class DatabaseService : IAsyncDisposable
+{
+    public ValueTask DisposeAsync() => /* cleanup */;
+}
+
+// FeatherDC will automatically call DisposeAsync when the scope is disposed
 ```
 Compile-Time Optimization
 
