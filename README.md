@@ -102,6 +102,7 @@ FeatherScope - Scoped service container
 FeatherDescriptor - Service metadata and factory
 
 Thread Safety
+
 All operations are thread-safe using:
 
 ConcurrentDictionary for singleton storage
