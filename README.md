@@ -1,4 +1,4 @@
-# FeatherDC 🪶
+# FeatherDC ⚡
 
 **A lightweight, high-performance Dependency Injection container for .NET**  
 *Built for developers who want DI without the framework bloat.*
